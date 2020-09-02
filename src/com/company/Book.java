@@ -23,7 +23,23 @@ public class Book {
 
     public int Chapter;
     public static final String CONSTANT = "English 2020";
+
+    public void flipping () {
+        System.out.println("Перелистнуть на страницу    ");
 }
+
+    public void flipping (int i) {
+        System.out.println("Перелистнуть на страницу  "   +  i);}
+
+    public void chapter (int i){
+        System.out.println("Перелистнуть на главу " + i);
+    }
+    public void defineChapter (int i){
+        System.out.println("Определить главу " + i);
+    }
+
+}
+
 
 
 
