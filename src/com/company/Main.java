@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +24,30 @@ public class Main {
 //        System.out.println("Покупателя звали" + " " + Store_Customer.CONSTANT);
 //        System.out.println("Продавцом был" + " " + Seller.CONSTANT);
 
+          Seller computers = new Seller();
+          computers.setTechnics("LG");
+          computers.setNameProduct("L1500");
+          computers.setPrice(10000);
 
+          Seller tablet = new Seller();
+          tablet.setTechnics("Lenovo");
+          tablet.setNameProduct("Pro200");
+          tablet.setPrice(3000);
+
+          Seller telephone = new Seller();
+          telephone.setTechnics("Apple");
+          telephone.setNameProduct("X");
+          telephone.setPrice(5000);
+
+          computers.remainder(5);
+          tablet.remainder(3);
+          telephone.remainder(2);
+
+        Scanner seller = new Scanner(System.in);
+        System.out.println("Введите количество товаров для покупки: ");
+        int purchase = seller.nextInt();
+        System.out.println("Цена за " + purchase + " штук(и) составит: " + purchase * computers.getPrice() + " грн.");
         }
-    }
+        }
+
 

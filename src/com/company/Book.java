@@ -1,6 +1,8 @@
 package com.company;
 
+
 public class Book {
+    public int currentPage;
     private int Page;
 
     public int getPage() {
@@ -21,7 +23,7 @@ public class Book {
         this.name = name;
     }
 
-    public int Chapter;
+    public String Chapter[][];
     public static final String CONSTANT = "English 2020";
 
     public void flipping () {
@@ -37,7 +39,8 @@ public class Book {
     public void defineChapter (int i){
         System.out.println("Определить главу " + i);
     }
-
+public void PageChaptersInBook (){
+}
 }
 
 
